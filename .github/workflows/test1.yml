@@ -1,6 +1,6 @@
 name: Shell Commands 
 
-on: [pull_request]
+on: [push]
 
 jobs:
   run-shell-command:
@@ -8,7 +8,7 @@ jobs:
     steps: 
       - name: echo a string
         run: echo "Hello World"
-        timeout-minutes: 0
+
       - name: multiline script 
         run: |
            node -v 
